@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSTRES</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&">
+    <style>
+        body {
+            margin: 0;
+            background: rgba(225, 116, 176, 0.29);
+            font-family: montserrat;
+        }
+        img {
+            width: 100%;
+        }
+        .padre1 {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 100px 50px 0;
+            /* background-color:  rgba(225, 116, 176, 0.48); */
+            /* background: rgba(225, 116, 176, 0.29); */
+        }
+        .elogo {
+            height: 50px;
+            width: 200px;
+            float: right;
+        }
+        ul {
+            list-style: none;
+        }
+        ul li {
+            float: left;
+            padding: 10px;
+        }
+
+        .carro {
+            border-radius: 70px;
+            background-color: black;
+        }
+
+        .telefono img {
+            height: 30px;
+        }
+
+        .seccion1 {
+            /* background-color: rgba(225, 116, 176, 0.29); */
+            height: 101vh;
+            display: flex;
+            justify-content: center;
+            padding-right: 43px;
+            gap: 224px;
+        }
+
+        .seccion1 .parte2 {
+            width: 400px
+        }
+
+        .seccion1 .parte1 {
+            width: 340px;
+            padding-top: 85px;
+        }
+
+        .parte1 .mak {
+            font-size: 85px;
+            font-family: montserrat;
+            font-weight: 900;
+        }
+
+        .seccion1 .boton1 {
+            margin-left: 17px;
+            background-color: #F6F880E5;
+            text-align: center;
+            width: 282px;
+            height: 39px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 7px 4px 0px rgba(225, 116, 176, 0.48);
+            font-family: montserrat;
+            font-weight: 600;
+        }
+
+        .seccion1 .mas {
+            text-decoration: none;
+            color: black;
+        }
+
+        .seccion1 .ga51 {
+            padding: 5px 0px 0px 348px;
+            width: 200px;
+        }
+
+        .mediaga img {
+            width: 90px;
+        }
+
+        .mediaga {
+            /* background-color: rgba(225, 116, 176, 0.29); */
+            display: flex;
+        }
+
+        .seccion2 {
+            display: flex;
+            justify-content: space-around;
+            gap: 102px;
+            padding: 0 400px 0 400px;
+            height: 100vh;
+            gap: 153px;
+        }
+
+        .gafrente img {
+            height: 100px;
+        }
+
+        .galletasfrutas img {
+            height: 100px;
+        }
+
+        .frutas img {
+            /* height: 400px; */
+            width: 400px;
+            filter: drop-shadow(2px 0px 60px rgba(225, 11, 86, 0.9));
+        }
+
+        .frente img {
+            height: 200px;
+            width: 200px;
+        }
+
+        .abajo img {
+            height: 200px;
+            width: 200px;
+            margin-top: -149px;
+        }
+
+        .galletass img {
+            height: 150px;
+            width: 150px;
+            margin-top: -139px;
+        }
+
+        .rosa {
+            display: flex;
+            justify-content: end;
+        }
+
+        .rosado img {
+            width: 200px;
+            height: 200px;
+            margin-left: 500px;
+        }
+
+        .seccion3 {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+            align-items: baseline;
+            gap: 77px;
+        }
+
+        .seccion3 .ga {
+            width: 300px;
+            filter: drop-shadow(2px 0px 60px rgba(225, 11, 86, 0.9));
+        }
+
+        .seccion3 .ga1 {
+            width: 373px;
+        }
+
+        .seccion3 .ga3 {
+            width: 342px;
+        }
+
+        .seccion3 .ga4 {
+            width: 304px;
+        }
+
+        .seccion3 .ga5 {
+            width: 195px;
+        }
+
+        .seccion3 .mak {
+            font-weight: 200;
+            font-family: montserrat;
+        }
+        .seccion3 .pe {
+            font-weight: 900;
+            display: flex;
+            justify-content: space-around;
+        }
+        .seccion4 {
+            height: 130vh;
+            display: flex;
+            justify-content: center;
+        }
+        .seccion4 .parte1 {
+            display: flex;
+            flex-direction: column;
+            width: 32%;
+            justify-content: flex-end;
+        }
+        .seccion4 .parte1a {
+            display: flex;
+            height: 641px;
+            align-items: flex-end;
+            width: 490px;
+        }
+        .seccion4 .loren {
+            width: 396px;
+            padding-top: 55px;
+            padding-left: 67px;
+            font-size: 19px;
+            font-weight: 600;
+            font-family: montserrat;
+        }
+        .seccion4 .mujer img {
+            width:300px;
+            filter: drop-shadow(2px -60px 139px rgba(225, 11, 86, 0.9));
+        }
+        .seccion4 .parte2 {
+            display: flex;
+            flex-direction: column;
+        }
+        .seccion4 .canasta {
+            width: 350px;
+            padding-left: 80px;
+            filter: drop-shadow(2px 2px 119px rgba(246, 248, 0, 0.5));
+        }
+
+        .seccion4 .boton2 {
+            margin-left: 51px;
+            background-color: #F6F880E5;
+            text-align: center;
+            width: 282px;
+            height: 39px;
+            border-radius: 30px;
+            font-family: verdana;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 7px 4px 0px rgba(225, 116, 176, 0.48);
+
+        }
+
+        .seccion4 .masinfo {
+            text-decoration: none;
+            color: black;
+        }
+
+        .seccion4 .parte2a {
+            display: flex;
+            align-items: center;
+            padding-top: 128px;
+            gap: 30px;
+            text-align: center;
+        }
+
+        .seccion4 .parte2b {
+            display: flex;
+            justify-content: center;
+            padding-top: 95px;
+            gap: 74px;
+        }
+
+        .seccion4 .contac {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+        }
+        .seccion4 .galleta0 {
+            width: 463px;
+        }
+        .seccion4 .galleta81 {
+            width: 398px;
+        }
+        .seccion4 .nume {
+            font-size: 23px;
+            font-weight: 600;
+        }
+        .seccion4 .cont {
+            font-weight: 700;
+            font-family: montserrat;
+            font-size: 25px;
+        }
+        .seccion4 .santa {
+            font-family: Montserrat;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+        }
+        .seccion4 .tele {
+            width: 32px;
+        }
+        .seccion4 .insta {
+            width: 44px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="padre1">
+        <div class="elogo">
+            <img src="logo.png" alt="">
+        </div>
+        <div class="listas">
+            <ul>
+                <li>casa</li>
+                <li>productos</li>
+                <li>tienda</li>
+                <li>contacto</li>
+            </ul>
+        </div>
+        <div class="telefono">
+            <img src="tele.png" alt="">
+        </div>
+        <div class="numero">
+            <h3>57+ 3024242526</h3>
+        </div>
+        <div class="carro">
+            <img src="carrito.png" alt="">
+        </div>
+        <div class="laflecha">
+            <img src="flecha.png" alt="">
+        </div>
+    </div>
+    <div class="seccion1">
+        <div class="parte1">
+            <h1 class="mak">MAKARONS</h1>
+            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum suscipit consequatur eaque
+                dolores ex
+                minima at. Tempore, fuga, id quibusdam beatae laudantium rem error maiores excepturi sint, tenetur
+                nostrum eum?</p>
+            <a class="mas" href="#">
+                <div class="boton1">Más información</div>
+            </a>
+            <div class="ga51"><img src="gaborrosa.png"></div>
+        </div>
+        <div class="parte2">
+            <img src="filagalleta.png" alt="">
+        </div>
+    </div>
+    <div class="miniseccion">
+        <div class="mediaga">
+            <img src="media.png" alt="">
+        </div>
+    </div>
+    <div class="seccion2">
+        <div class="frutas">
+            <img src="galletasfrutas.png" alt="">
+        </div>
+        <div class="galletas">
+            <img src="gafrente.png" alt="">
+            <div class="parrafo">
+                <h1>EL MEJOR SABOR ES INDISCUTIBLE</h1>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vitae nostrum pariatur esse
+                    explicabo suscipit ut iste voluptates quae? Dolorem dolorum culpa tempore laboriosam eius
+                    voluptatem, neque quia vel hic!</P>
+                <img src="gabajo.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="seccion3">
+        <div class="ga">
+            <img class="ga1" src="galletasrosadas.png" alt="">
+            <p class="mak">Makarons 1</p>
+            <p class="pe">$10</p>
+        </div>
+        <div class="ga">
+            <img class="ga2" src="galletasfucsia.png" alt="">
+            <p class="mak">Makarons 1</p>
+            <p class="pe">$10</p>
+        </div>
+        <div class="ga">
+            <img class="ga3" src="marron.png" alt="">
+            <p class="mak">Makarons 1</p>
+            <p class="pe">$10</p>
+        </div>
+        <div class="ga">
+            <img class="ga4" src="verdes.png" alt="">
+            <p class="mak">Makarons 1</p>
+            <p class="pe">$10</p>
+        </div>
+        <div class="ga">
+            <img class="ga5" src="rose.png" alt="">
+            <p class="mak">Makarons 1</p>
+            <p class="pe">$10</p>
+        </div>
+        <div class="ga">
+            <img class="ga6" src="arequipe.png" alt="">
+            <p class="mak">Makarons 1</p>
+            <p class="pe">$10</p>
+        </div>
+    </div>
+    <div class="seccion4">
+        <div class="parte1">
+            <div>
+                <p class="loren">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ornare est et nisi
+                    pretium, dignissim
+                    vestibulum nibh tincidunt. Proin a ultricies quam. Sed diam turpis, porta vitae rhoncus vitae,
+                    efficitur
+                    vel diam.</p>
+                <a class="masinfo" href="#">
+                    <div class="boton2">
+                        Mas informacion
+                    </div>
+                </a>
+            </div>
+            <div class="parte1a">
+                <div class="mujer">
+                    <img src="cheff.png">
+                </div>
+                <div class="logo2">
+                    <img src="firma.png">
+                </div>
+            </div>
+        </div>
+        <div class="parte2">
+            <div class="canasta">
+                <img src="canastodegalletas.png">
+            </div>
+            <div class="parte2a">
+                <div>
+                    <p class="cont">Contactanos</p>
+                    <p class="santa">Santa Marta <br>3024242526</p>
+                </div>
+                <div class="galleta0">
+                    <img class="galleta81" src="trio.png">
+                </div>
+            </div>
+            <div class="parte2b">
+                <div class="contac">
+                    <div class="tel">
+                        <img src="tele.png">
+                    </div>
+                    <div class="nume">
+                        3024242526
+                    </div>
+                </div>
+                <div>
+                    <img class="insta" src="instagram 1.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
